@@ -1,10 +1,10 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext, ConversationHandler, CallbackQueryHandler
 from telegram import ParseMode
-from creds import Key
+# from creds import Key
 CHOOSING, NAME, COLLEGE, PERSONA = range(4)
 ANSWER=0
-TOKEN = Key
+TOKEN = "7173918784:AAFnlWO3UyRUMMOlvpEg51hmjwj6OKCkT3Q"
 from  databaseconn import save_to_db,find_user_details,save_history
 import logging
 import nltk
@@ -168,7 +168,11 @@ def messages(update:Update,context:CallbackContext):
         
         text = update.message.text
         response = give_answer(text)
-        update.message.reply_text(response['response'],parse_mode=ParseMode.HTML)
+        print(response)
+        import re
+        clean = re.compile('<br>')  # Example: Remove <br> tags
+        ans = re.sub(clean, '', response['response'])
+        update.message.reply_text(ans,parse_mode=ParseMode.HTML)
         if len(response['links'])!=0:
             for i in response['links']:
                 if ".mp4" in i:
