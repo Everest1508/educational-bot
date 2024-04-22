@@ -15,6 +15,10 @@ import numpy as np
 from keras.models import load_model
 import json
 import random
+import warnings
+
+warnings.filterwarnings('ignore')
+
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -171,7 +175,7 @@ def messages(update:Update,context:CallbackContext):
         print(response)
         import re
         clean = re.compile('<br>')  # Example: Remove <br> tags
-        ans = re.sub(clean, '', response['response'])
+        ans = re.sub(clean, '\n', response['response'])
         update.message.reply_text(ans,parse_mode=ParseMode.HTML)
         if len(response['links'])!=0:
             for i in response['links']:
