@@ -1,0 +1,575 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Hi there",
+        "Hello there",
+        "Greetings",
+        "Good morning",
+        "Good afternoon",
+        "Hey, how are you?"
+      ],
+      "responses": [
+        "Hello! How can I assist you today?",
+        "Hi! What can I help you with?",
+        "Hey there! How may I assist you?",
+        "Greetings! How can I be of service?",
+        "Hi, nice to meet you! How may I assist you?",
+        "Hey, how are you doing? How can I help you today?",
+        "Well, hello! What brings you here?",
+        "Hi! It's great to see you! What can I do for you?"
+      ],
+      "context": [],
+      "links": []
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Goodbye",
+        "Bye",
+        "See you later",
+        "Adios",
+        "Take care",
+        "I gotta go",
+        "Talk to you later",
+        "Catch you later",
+        "See ya",
+        "Bye for now"
+      ],
+      "responses": [
+        "Goodbye! Have a great day!",
+        "See you later! Take care.",
+        "Bye! Don't hesitate to return if you have more questions.",
+        "Farewell! Until we meet again.",
+        "Adios! Remember, I'm here to help whenever you need.",
+        "Okay, take care! If you need anything else, don't hesitate to ask.",
+        "Sure, talk to you later! Don't hesitate to reach out if you need assistance.",
+        "Catch you later! If you have more questions, feel free to ask.",
+        "See ya! If you ever need assistance, I'm just a message away.",
+        "Bye for now! Feel free to come back anytime."
+      ],
+      "context": [],
+      "links": []
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thank you",
+        "Thanks",
+        "Appreciate it",
+        "Thank you very much",
+        "Thanks a lot",
+        "Thank you so much"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "Glad I could assist you!",
+        "No problem at all! If you have any more questions, feel free to ask.",
+        "You're welcome! If you need further assistance, just let me know.",
+        "My pleasure! If there's anything else I can help you with, don't hesitate to ask.",
+        "Anytime! Let me know if there's anything else I can assist you with.",
+        "It's my pleasure to assist you! If you need help in the future, feel free to reach out.",
+        "You're welcome! Don't hesitate to ask if you have more questions.",
+        "No worries! If you need anything else, I'm here to help."
+      ],
+      "context": [],
+      "links": []
+    },
+    {
+      "tag": "exams_after_12th",
+      "patterns": [
+        "What exams can I take after 12th?",
+        "Exams after 12th",
+        "Options after 12th exams",
+        "What are my career options after 12th?",
+        "I just finished 12th grade, what's next?",
+        "After finishing high school, what's the next step?",
+        "What should I do after completing 12th grade?",
+        "Tell me about career paths after 12th grade",
+        "What career should I pursue after 12th?"
+      ],
+      "responses": [
+        "There are various exams you can consider after completing 12th such as MHT-CET, JEE, NEET, CLAT, NDA, BITSAT, UGEE, etc. <br> Which specific exam are you interested in?",
+        "After 12th, you have several options like JEE Main, NEET, CLAT, NDA, BITSAT, UGEE, and more. Which one would you like to know about?",
+        "Post 12th, there are numerous exams available including JEE Main, NEET, CLAT, NDA, BITSAT, UGEE, and others. What information are you seeking?"
+      ],
+      "context": [],
+      "links": []
+    },
+    {
+      "tag": "jee_main",
+      "patterns": [
+        "Tell me about JEE Main",
+        "What is JEE Main?",
+        "JEE Main details",
+        "What's the deal with JEE Main?",
+        "Can you tell me about JEE Main exam?"
+      ],
+      "responses": [
+        "Purpose - For Admission in B. E./B. Tech., B. Arch., B. Planning. <br> Eligibility - Class 12 pass (PCM) <br>Application mode - Online <br> Documents: <br> 1) Scanned image of candidates' photograph, <br> 2) Scanned image of signature. <br> 3) Scanned image of PwD certificate, if applicable.<br> 4) Category certificate, if applicable.<br> 5) The recent photograph should be either in colour or black and white with 80 per cent face (without mask) visible including ears. The photo should be taken against a white background. <br> 6) Scanned photograph and signature should be in JPG/JPEG format only and clearly visible. <br> 7) The size of the scanned photograph should be between 10 kb to 200 kb. <br> 8) The size of the scanned signature should be between 4 kb to 30 kb and clearly visible. <br> 9) The size of the scanned copy of the category and/or PwD certificate (SC/ST/OBC/EWS etc.) should be in pdf between 50kb to 300kb and clearly visible.<br> 10) If it is found at any time that the candidate has used/uploaded the photograph, signature, and certificate(s) of someone else or has tampered his/her admit card/result/scorecard, these acts will be treated as Unfair Means (UFM) Practices."
+      ],
+      "context": [],
+      "links": [
+        "https://jeemain.nta.ac.in/"
+      ]
+    },
+    {
+      "tag": "jee_advanced",
+      "patterns": [
+        "Tell me about JEE Advanced",
+        "What is JEE Advanced?",
+        "JEE Advanced details",
+        "I want to know about JEE Advanced exam",
+        "Can you explain JEE Advanced to me?"
+      ],
+      "responses": [
+        " Purpose- Admission in UG programmes in IITs <br> Eligibility - Class 12 Pass (PCM) <br> Application mode -Online. <br> Documents: 1) Birth certificate or Class X certificate <br> 2) Class XII certificate for candidates appearing for the first time in 2023 or whose Board released the Class XII results for the academic session 2021-22 after October 25, 2022. <br> 3) If available, a Class XII mark sheet for the 2024 exam.<br> 4) Identity proof like Citizenship certificate, Foreign Passport, OCI/PIO Card.<br> 5) If the candidate's name differs from the one on the Class X certificate, a Gazette notification for the name change.<br> 6) For GEN-EWS/OBC-NCL category, the recommended certificate issue date should be on or after April 1, 2024. In case of non-availability, a Declaration in Lieu of GEN-EWS Certificate/OBC-NCL certificate is required. <br> 7) For SC/ST category, the latest Caste (for SC) or tribe (for ST) certificate following the Government of India's guidelines (Refer to the official JEE Advanced 2024 information brochure for more details)."
+      ],
+      "context": [],
+      "links": [
+        "https://jeeadv.ac.in/"
+      ]
+    },
+    {
+      "tag": "bitsat",
+      "patterns": [
+        "Tell me about BITSAT",
+        "What is BITSAT?",
+        "BITSAT details",
+        "I want to know about BITSAT exam",
+        "Can you explain BITSAT to me?"
+      ],
+      "responses": [
+        "Purpose - Admission in Integrated First Degree programmes in BITS Pilani, Goa & Hyderabad campuses.<br> Eligibility - Class 12 pass (PCM)<br>Application mode - Online <br> Documents:1) Net banking/credit card/debit card details<br> 2) Candidate's Photograph - 50 KB to 100 KB in JPEG/JPG format<br> 3) Candidate's Signature - 10 KB to 100 KB in JPEG/ JPG format.<br> 4) An attested photocopy of the Class X pass/ Matriculation/Secondary School certificate issued by the Board<br> 5) An attested photocopy of the mark sheet of the qualifying examination and any other higher University/Board examinations passed"
+      ],
+      "context": [],
+      "links": [
+        "https://www.bitsadmission.com/"
+      ]
+    },
+    {
+      "tag": "mht_cet",
+      "patterns": [
+        "Tell me about MHT-CET",
+        "What is MHT-CET?",
+        "MHT-CET details",
+        "I want to know about MHT-CET exam",
+        "Can you explain MHT-CET to me?"
+      ],
+      "responses": [
+        "Purpose -  for admission in engineering,pharmacy,agriculture<br> Eligibility -  passed 12th or the equivalent examination <br>Application Mode – Online<br>Documents<br> 1) Class 10th Mark Sheet: Required for entering your Date of Birth and Roll Number details.<br>2) Aadhaar Card: Helpful for entering your Full Name, Father & Mother’s Name, and Communication Address.<br> 3) Class 12th Details: Enter your Class 12th details, including the Name of the School, Passing Year, etc.<br> 4) Category Certificate: If you belong to reserved categories, specify your caste/category in the application form.<br> 5) Mobile Number & E-Mail ID: You must have a valid Mobile Number and e-mail ID for registration."
+      ],
+      "context": [],
+      "links": [
+        " https://cetcell.mahacet.org/"
+      ]
+    },
+    {
+      "tag": "UGEE",
+      "patterns": [
+        "Tell me about UGEE",
+        "What is UGEE?",
+        "UGEE details",
+        "I want to know about UGEE exam",
+        "Can you explain UGEE to me?"
+      ],
+      "responses": [
+        "Purpose - Admission in Dual Degree (B.Tech + MSc. by Research) programmes at IIIT Hyderabad.<br>Eligibility - Class 12 Pass (PCM)<br>Application mode - Online. <br>Documents: 1) Class X Marksheet. 2) Class XII Marksheet. <br>3) Candidate’s Photograph<br> 4) Candidate’s Signature. <br> 5) Passing Certificate <br> 6) Migration Certificate"
+      ],
+      "context": [],
+      "links": [
+        "https://ugadmissions.iiit.ac.in/"
+      ]
+    },
+    {
+      "tag": "indian_navy_btech_entry_scheme",
+      "patterns": [
+        "Tell me about Indian Navy B.Tech Entry Scheme",
+        "What is Indian Navy B.Tech Entry Scheme?",
+        "Indian Navy B.Tech Entry Scheme details",
+        "I want to know about Indian Navy B.Tech Entry Scheme",
+        "Can you explain Indian Navy B.Tech Entry Scheme to me?"
+      ],
+      "responses": [
+        "Purpose - Admission in Indian Navy B.Tech course <br>Eligibility - Class 12 passed<br>Application mode - Online<br>Documents: <br>Aadhaar Card: A valid proof of identity.<br>Residential Proof: Document verifying your residential address.<br>Proof of Date of Birth: Such as a birth certificate. <br>Matriculation Certificate: Required for entering your Date of Birth and Roll Number details.<br>10+2 Pass Certificate: Scanned copy of your Class 12th mark sheet.<br>JEE (Main)-2023 Scorecard: If you have appeared for JEE (Main) in 2023. <br>Scanned Passport-Size Photograph: Ensure that the photograph meets the specified dimensions and clarity requirements."
+      ],
+      "context": [],
+      "links": [
+        " https://www.joinindiannavy.gov.in/en/event/online-application-for-10-2-b-tech-cadet-entry-scheme-jan-2021-batch-1.html"
+      ]
+    },
+    {
+      "tag": "indian_navy_sailors_recruitment",
+      "patterns": [
+        "Tell me about Indian Navy Sailors Recruitment",
+        "What is Indian Navy Sailors Recruitment?",
+        "Indian Navy Sailors Recruitment details",
+        "I want to know about Indian Navy Sailors Recruitment",
+        "Can you explain Indian Navy Sailors Recruitment to me?"
+      ],
+      "responses": [
+        "Purpose - Admission in 24 weeks Basic training at INS Chilka followed by Professional training<br> Eligibility - Class 12 (Maths and <br> Physics/Chem./Bio/Computer Sc.)<br>Application mode - Online, By Post <br> a. Candidates need to punch and firmly tie the following documents with a strong thread to the Indian Navy SSR and AA application form in the sequence stated below <br>Completed application form with a spare recent passport size photograph. <br>Self-attested copies of the following certificates—<br>Matric /equivalent certificate for date of birth verification<br>Mark sheet and certificate of Diploma/Higher Board examination/ Matriculation as applicable. <br>Domicile certificate<br>Two self-addressed envelopes of size 22 x 10 cms.<br>Candidates need to affix Rupees 10/- stamp on one envelope and submit one envelope without the stamp along with the application form.<br>Candidates need to note the colour specifications of the envelopes—white colour envelop is for AA entry and brown colour envelope is for SSR/MR/NMR entry.<br>On the envelope containing the application, candidates should clearly mention—the type of entry, the state, exam percentage, and name of the exam passed."
+      ],
+      "context": [],
+      "links": [
+        "https://www.joinindiannavy.gov.in/en/faq/faq/index/sailor"
+      ]
+    },
+    {
+      "tag": "indian_army_technical_entry_scheme",
+      "patterns": [
+        "Tell me about Indian Army Technical Entry Scheme",
+        "What is Indian Army Technical Entry Scheme?",
+        "Indian Army Technical Entry Scheme details",
+        "I want to know about Indian Army Technical Entry Scheme",
+        "Can you explain Indian Army Technical Entry Scheme to me?"
+      ],
+      "responses": [
+        "Purpose-Technical Entry to Army<br>Eligibility-Class 12 PCM<br>Apply-Online<br> Documents:<br> Photocopy of Call letter.<br>Photocopy of Application form.<br>12th board certificate ( if it is not avail then bonafide certificate of college)<br>12th mark sheet.<br>10th board certificate.<br>10th mark sheet.<br>NCC Certificate ( if you have).<br>Extra ciricular activity certificate.<br>20 passport size photo."
+      ],
+      "context": [],
+      "links": [
+        "https://www.joinindianarmy.co/join-indian-army-102-tes-course/"
+      ]
+    },
+    {
+      "tag": "national_defence_academy_and_naval_academy_examination",
+      "patterns": [
+        "Tell me about National Defence Academy and Naval Academy Examination",
+        "What is National Defence Academy and Naval Academy Examination?",
+        "National Defence Academy and Naval Academy Examination details",
+        "I want to know about National Defence Academy and Naval Academy Examination",
+        "Can you explain National Defence Academy and Naval Academy Examination to me?"
+      ],
+      "responses": [
+        "Purpose - Admission to Army and Air Force wings of NDA and 4 years B. Tech course for the Indian Naval Academy Course (INAC)<br>Eligibility- Class 12, 12 Passed<br>Application mode - Online<br> Documents: <br>Scanned images of photograph and signature<br>Photo-identity card in PDF format (Aadhar Card / Voter Card/PAN Card/ Passport/ Driving License/ School Photo ID/Any other photo ID Card issued by the State / Central Government)<br>Marksheet and admit card of Class 10 and 12"
+      ],
+      "context": [],
+      "links": [
+        "https://upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28I%29%2C%202024"
+      ]
+    },
+    {
+      "tag": "nift",
+      "patterns": [
+        "Tell me about NIFT",
+        "What is NIFT?",
+        "NIFT details",
+        "I want to know about NIFT exam",
+        "Can you explain NIFT to me?"
+      ],
+      "responses": [
+        "Purpose-For Admission in Design, Management and Technology for the international fashion business<br>Eligibility- Class 12, 12+, Graduate<br>Application mode -Online, By Post<br> Documents:<br>Valid Email Id<br>Details of Educational Qualification<br>Personal Details<br>Certificate of Disability<br>ST or SC or OBC Certificate If applicable<br> Scanned Image of Signature<br> Scanned Image of Photograph<br>Details of Credit/Debit card in case of making payment online"
+      ],
+      "context": [],
+      "links": [
+        " https://exams.nta.ac.in/NIFT/"
+      ]
+    },
+    {
+      "tag": "aieed",
+      "patterns": [
+        "Tell me about AIEED",
+        "What is AIEED?",
+        "AIEED details",
+        "I want to know about AIEED exam",
+        "Can you explain AIEED to me?"
+      ],
+      "responses": [
+        "<br>Passport size photograph <br> Signature <br >10th and 12th mark sheets<br>Portfolio of design work if you have a design portfolio make sure to include it in your application. <br>Remember to carry your AIEED Admit Card along with a valid ID proof to the exam centre for verification. Accepted ID proofs include: Driving License <br> Aadhar Card<br> Passport<br>10th marksheet<br> Recent Graduation Marksheet"
+      ],
+      "context": [],
+      "links": [
+        "https://www.aieed.com/"
+      ]
+    },
+    {
+      "tag": "cuet",
+      "patterns": [
+        "Tell me about CUET",
+        "What is CUET?",
+        "CUET details",
+        "I want to know about CUET exam",
+        "Can you explain CUET to me?"
+      ],
+      "responses": [
+        " Eligibility - Class 12 Application mode - Online<br> Documents: Scanned copy of recent color passport-size photograph, Ensure that the photograph meets the specified dimensions and clarity requirements. <br> Scanned copy of signature use only black ink: Your signature should be clear and legible. <br> Government-issued photo identity proof: Acceptable proofs include <br> Aadhar card, PAN card, Voter ID, or Passport. <br> Scanned copy of Class 10th mark sheet. <br>Scanned copy of Class 12th mark sheet"
+      ],
+      "context": [],
+      "links": [
+        "https://cuet.nta.nic.in/"
+      ]
+    },
+    {
+      "tag": "hsee",
+      "patterns": [
+        "Tell me about HSEE",
+        "What is HSEE?",
+        "HSEE details",
+        "I want to know about HSEE exam",
+        "Can you explain HSEE to me?"
+      ],
+      "responses": [
+        "IIT Madras Humanities and Social Sciences Entrance Examination (HSEE) <br> Purpose-Admission in integrated Master of Arts programme <br>Eligibility - Class 12<br> Application mode - Online<br> Documents:<br> Scanned photograph and signatures of the candidate<br> Ensure that the photograph and signature meet the specified dimensions and clarity requirements. <br>Scanned copy of Class 10 examination certificate: This serves as proof of your name and date of birth.<br> Scanned copy of 10+2 class mark sheet (if already passed 10+2  examination): Provide a clear scan of your 12th-grade mark sheet."
+      ],
+      "context": [],
+      "links": [
+        " https://hsee.iitm.ac.in/"
+      ]
+    },
+    {
+      "tag": "tiss_bat",
+      "patterns": [
+        "Tell me about TISS-BAT",
+        "What is TISS-BAT?",
+        "TISS-BAT details",
+        "I want to know about TISS-BAT exam",
+        "Can you explain TISS-BAT to me?"
+      ],
+      "responses": [
+        "Purpose - Admission in Bachlors of Arts Social Sciences programme in any of three Campuses that is Tuljapur, Guwahati and Hyderabad<br> Eligibility - Class 12 <br> Application mode - Online<br> Documents: <br>Admit Card of TISS BAT 2023: Make sure you have your admit card ready for the exam.<br> Score Card of TISS BAT 2023: Keep your scorecard accessible.<br>Class 10 certificate: Provide a scanned copy of your Class 10 examination certificate as proof of your name and date of birth.<br> Class 12 certificate: Similarly, include a scanned copy of your 12th-grade mark sheet.<br> Caste/Category certificate (if applicable): If you belong to a category other than the general category, ensure you have the relevant caste/category certificate issued by the competent authority."
+      ],
+      "context": [],
+      "links": [
+        "https://www.tiss.edu/admissions/"
+      ]
+    },
+    {
+      "tag": "efl_u_hyderabad_entrance_test",
+      "patterns": [
+        "Tell me about The English and Foreign Languages University Hyderabad Entrance Test",
+        "What is The English and Foreign Languages University Hyderabad Entrance Test?",
+        "The English and Foreign Languages University Hyderabad Entrance Test details",
+        "I want to know about The English and Foreign Languages University Hyderabad Entrance Test",
+        "Can you explain The English and Foreign Languages University Hyderabad Entrance Test to me?"
+      ],
+      "responses": [
+        "Purpose-Admission for BA (Hons) in English, Arabic, French, German, Russian and Spanish <br >BCJ, B.Ed. (English) <br>Eligibility - Class 12, Graduation, Post Graduation <br>Application mode - Online <br> Scanned Passport Size Photo, Scanned Signature in Black ink only<br> 10 and 12 Marksheets<br>Entrance Exam Score Card<br>Birth Certificate<br>Valid ID Proof like Aadhar Card, Voter ID Card, Ration Card, or Passport<br>Passport Size Photographs, Migration or Transfer Certificate If Applicable."
+      ],
+      "context": [],
+      "links": [
+        "https://www.efluniversity.ac.in/"
+      ]
+    },
+    {
+      "tag": "agriculture_research",
+      "patterns": [
+        "Tell me about ICAR AIEEA",
+        "What is ICAR AIEEA?",
+        "ICAR AIEEA details",
+        "I want to know about ICAR AIEEA exam",
+        "Can you explain ICAR AIEEA to me?",
+        "What is India Council of Agriculture Research?",
+        "What is ICAR AIEEA?",
+        "What is India Council of Agriculture Research",
+        "What is ICAR AIEEA"
+      ],
+      "responses": [
+        "Purpose - Admission in Bachelor, Master Degree Program, <br>SRF or PGS to Pursuing PhD in Agriculture and Allied Sciences at Agricultural Universities <br>Eligibility-Class 12, UG, PG<br>Application mode -Online<br>Documents Required are<br> Scanned Passport Size photographs with signature in black ink<br> 10th and 12th Marksheets<br>Entrance Exam Score Card<br>Birth Certificate<br>Valid ID Proof like Aadhar Card, Voter ID card, Ration Card, or Passport<br>Migration or Transfer Certificate<br>Also keep a few extra passport size photographs handy"
+      ],
+      "context": [],
+      "links": [
+        "www.icar.org.in/"
+      ]
+    },
+    {
+      "tag":"mgt_add_test",
+      "patterns": [
+        "Tell me about Integrated Program in Management",
+        "What is Integrated program in management?",
+        "Integrated program in management details",
+        "I want to know about Integrated program in management exam",
+        "Can you explain Integrated program in management to me?",
+        "What is Integrated program in management?",
+        "What is Integrated program in management from IIMs"
+      ],
+      "responses": [
+        "Purpose-Admission in 5 year Integrated program in Management from select IIMs<br>Eligibility-Class 12<br>Application mode -Online<br>Documents Required are<br>Scanned Passport size photo with Scanned Signature in Black Ink onl<br>10th and 12th Marksheets<br>Entrance Exam Score Card<br>Birth Certificate<br>Valid ID Proof  like Aadhar Card, Voter ID card, Ration Card, or Passport<br>Migration or Transfer Certificate"
+      ],
+      "context": [],
+      "links": [
+        "https://www.iimidr.ac.in/"
+      ]
+    },
+    {
+      "tag":"hotel_mgt",
+      "patterns": [
+        "Tell me about NCHMCT JEE",
+        "What is NCHMCT JEE?",
+        "NCHMCT JEE details",
+        "I want to know about NCHMCT JEE exam",
+        "Can you explain NCHMCT JEE to me?",
+        "What is All India Hotel Management Entrance Exam NCHMCT JEE?",
+        "What is NCHMCT JEE?",
+        "What is All India What is All India Hotel Management Entrance Exam",
+        "What is NCHMCT JEE"
+      ],
+      "responses": [
+        "Purpose-Admission in B.Sc. Hospitality & Hotel Administration<br>Eligibility-Class 12<br>Application mode -Online<br>Documents Required are<br>Class 10th and 12th Mark Sheets<br>Birth Certificate<br>NCHMCT JEE Scorecard<br>Medical Certificate If applicable<br> NCHMCT JEE Admit Card<br>Photo ID Proof<br>PwD Certificate, KM Certificate, Disability Certificate,Category Certificate"
+      ],
+      "context": [],
+      "links": [
+        "http://nchm.nic.in/"
+      ]
+    },
+    {
+      "tag": "law_add_test",
+      "patterns": [
+        "Tell me about Common Law Admission Test",
+        "What is CLAT?",
+        "CLAT details",
+        "I want to know about CLAT exam",
+        "Can you explain CLAT to me?",
+        "What is Common Law Admission Test?",
+        "What is CLAT Common Law Admission Test?",
+        "What is Common Law Admission Test CLAT?",
+        "What is CLAT"
+      ],
+      "responses": [
+        "Purpose-Admission in B.A. LL.B (Hons), B.Com. (Hons), BBA LL.B (Hons)<br>Eligibility- Class 12, 12+<br>Application mode -Online or By Post<br>Documents Required are<br>Scanned Passport size photo with signature in black ink<br>Category Certificate for SC/ST/OBC/PwD<BR>BPL Certificate if applicable"
+      ],
+      "context": [],
+      "links": [
+        "http://clat.ac.in/"
+      ]
+    },
+    {
+      "tag":"ailet",
+      "patterns": [
+        "Tell me about All India Law Entrance Test",
+        "What is AILET?",
+        "AILET details",
+        "I want to know about AILET exam",
+        "Can you explain AILET to me?",
+        "What is All India Law Entrance Test?",
+        "What is AILET All India Law Entrance Test?",
+        "What is All India Law Entrance Test AILET?",
+        "What is AILET"
+      ],
+      "responses": [
+        "Purpose-  Admission in B.A. LL.B. Honors, LLM, PhD<br>Eligibility-Class 12, 12+, LLB, LLM<br>Apply-Online, By Post<br> Documents Required are<br>Contact Details (for Registration):valid email address<br>An active mobile number<br>ID Proof:Aadhar Card<br>Voter ID Card<br>Passport<br>Driving Licence<br>Academic Documents:<br>Marksheet of Class X<br>Marksheet of Class XII<br>Certificate of Class X<br>Certificate of Class XII<br>Personal Information:<br>Candidates name<br>Parents name<br>Address<br>Contact information"
+      ],
+      "context": [],
+      "links": [
+        "www.nludelhi.ac.in/"
+      ]
+    },
+    {
+      "tag":"sci_edu_res",
+      "patterns": [
+        "Tell me about Indian Institutions of Science Education and Research",
+        "What is Indian Institutions of Science Education and Research?",
+        "Indian Institutions of Science Education and Research details",
+        "I want to know about Indian Institutions of Science Education and Research exam",
+        "Can you explain Indian Institutions of Science Education and Research to me?",
+        "What is Indian Institutions of Science Education and Research test?",
+        "What is Indian Institutions of Science Education and Research Test?",
+        "What is Indian Institutions of Science Education and Research?",
+        "What is Indian Institutions of Science Education and Research?"
+      ],
+      "responses": [
+        "Purpose-Admissions to 5 year BS-MS Degree Programme<br>Eligibility- Class 12<br>Application mode - Online<br>Documents:<br>Scanned passport-size photograph<br>Scanned signature<br>Date of birth certificate<br>Self-attested copy of certificate and mark sheet of Class 12<br>Community certificate (if applicable)<>Scorecard of natibronal/state-level examination"
+      ],
+      "context": [],
+      "links": [
+        "https://www.iiseradmission.in/"
+      ]
+    },
+    {
+      "tag":"nest",
+      "patterns": [
+        "Tell me about National Entrance Screening Test ",
+        "What is National Entrance Screening Test ?",
+        "National Entrance Screening Test details",
+        "I want to know about National Entrance Screening Test to me?",
+        "What is National Entrance Screening Test?",
+        "What isNational Entrance Screening Test"
+      ],
+      "responses": [
+        "Purpose-Admission in 5 year integrated M.Sc programme in Biological, Chemical, Mathematical and Physical sciences in NISER or UM-DAE CBS.<br>Eligibility-Class 12 (PCMB)<br>Application mode - Online, By Post<br>Documents Required are<br>Scanned Passport size photograph with signature <br>Class 10th and 12th Marksheet<br>Recent Passport size photograph<br>Category Certificate"
+      ],
+      "context": [],
+      "links": [
+        "www.nestexam.in/"
+      ]
+    },
+    {
+      "tag":"cmi",
+      "patterns": [
+        "Tell me about Chennai Mathematical Institute CMI",
+        "What is Chennai Mathematical Institute CMI?",
+        "Chennai Mathematical Institute details",
+        "I want to know about Chennai Mathematical Institute to me?",
+        "What isChennai Mathematical Institute",
+        "What is Chennai Mathematical Institute"
+      ],
+      "responses": [
+        "Purpose - Admission in B.Sc. Honors Programmes <br>Eligibility - Class 12<br>Application mode - Online<br>Documents<br>Scanned Passport size photograph<br>Scanned Signature of candidate<br>Class 10th and 12th Class Marksheet<br>Category Certificate"
+      ],
+      "context": [],
+      "links": [
+        "https://www.cmi.ac.in/admissions/"
+      ]
+    },
+    {
+      "tag":"ind_stats_ints_add",
+      "patterns": [
+        "Tell me about Indian Statistical Instutute Admission",
+        "What is Indian Statistical Instutute Admission",
+        "Indian Statistical Instutute Admission details",
+        "I want to know about Indian Statistical Instutute Admission to me?",
+        "What is Indian Statistical Instutute Admission",
+        "What is Indian Statistical Instutute Admission"
+      ],
+      "responses": [
+        "Purpose-Admission in B Stat (Hons), B Math (Hons), M Stat, M Math, MS (QE), MS (LIS), M Tech (CS), M Tech (QROR) and Research Fellowships.<br>Eligibility-Class 12 (Maths, English<br>Application mode -Online, By Post<br>Documents Required are<br>Scanned Passport size photo with scanned signature<br>10th and 12th Marksheet<br>Category Certificate"
+      ],
+      "context": [],
+      "links": [
+        "www.isical.ac.in/index.php"
+      ]
+    },
+    {
+      "tag":"bhu_uet",
+      "patterns": [
+        "Tell me about BHU Undergraduate Entrance Test (BHU UET)",
+        "What is BHU Undergraduate Entrance Test (BHU UET)",
+        "BHU Undergraduate Entrance Test (BHU UET) details",
+        "I want to know about BHU Undergraduate Entrance Test (BHU UET) to me?",
+        "What is BHU Undergraduate Entrance Test (BHU UET)",
+        "What is BHU Undergraduate Entrance Test (BHU UET)",
+        "What is BHU UET"
+      ],
+      "responses": [
+        "Purpose-Admission in UG programmes in BHU<br>Eligibility-Class 12, 12+<br>Application mode -Online, By Post<br>Documents Required are: <br>Scanned Passpost size photograph<br>Aadhar Card/Voter ID/Passport<br>Bank Passbook<br>Class 10th and 12th Marksheet<br>Bank Passbook"
+      ],
+      "context": [],
+      "links": [
+        "www.bhu.ac.in/"
+      ]
+    },
+    {
+      "tag":"bana_thali",
+      "patterns": [
+        "Tell me about Banasthali Vidyapith Admission",
+        "What is Banasthali Vidyapith Admission",
+        "BBanasthali Vidyapith Admission details",
+        "I want to know about Banasthali Vidyapith Admission to me?",
+        "What is Banasthali Vidyapith Admission",
+        "What is Banasthali Vidyapith Admission"
+      ],
+      "responses": [
+        "Purpose-Admission in Class 6, 9 & 11, Graduation, Post Graduation<br>Eligibility-Class 5, 8, 10 Passed (Only Girls)<br>Application mode - Online, Post<br>Documents Required:<br>Scanned Passport size photo and Signature<br>Class 10th and 12th Marksheet<>Reserved Category Certificate"
+      ],
+      "context": [],
+      "links": [
+        "www.banasthali.org/banasthali/wcms/en/home/"
+      ]
+    }
+  ]
+}
